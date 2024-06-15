@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body>
+        <h1 id="titulo">Salud Mental y Adicciones</h1>
+        <button onclick="cambiarTexto()">Haz clic aquí</button>
+        <script>
+            function cambiarTexto() {
+                document.getElementById("titulo").innerHTML = "Salud  Mental y Adicion";
+            }
+        </script>
+    <title>Salud Mental y Adicciones</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0de49c;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #e9ecef;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav a {
+            color: #007bff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .nav a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .content {
+            padding: 2rem;
+            background-color: white;
+            margin:2rem;
+            border-radius: 52px;
+            width: 92rem;
+        }
+
+        .quiz {
+            margin-top: 2rem;
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .quiz h2 {
+            margin: 0;
+        }
+
+        .quiz p {
+            margin: 0.5rem 0;
+        }
+
+        .quiz input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .quiz button {
+            margin-top: 1rem;
+            padding: 0.5rem 2rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+
+        .quiz button:hover {
+            background-color: #003996;
+        }
+
+        .float-box {
+      background-color: rgb(241, 241, 241);
+      border: 1px solid rgb(0, 0, 0);
+      padding: 10px;
+      width: 290px;
+      height: 889px;
+      position: absolute;
+      top: 300px;
+      right: 12px;
+      border-radius: 52px;
+        }
+
+        .float-box2 {
+      background-color: 007bff;
+      padding: 3px;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 5px;
+      right: 100px;
+        }
+        
+        .float-box4 {
+      background-color: 007bff;
+      border: 1px solid rgb(141, 137, 137);
+      padding: 3px;
+      width: 105px;
+      height: 150px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+        }
+
+        .h5{
+            font-size: 20rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <html>
+        <head>
+          <title>Ventana Emergente</title>
+          <style>
+            /* Estilos para la ventana emergente */
+            #popup {
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #fff;
+              padding: 20px;
+              border: 1px solid #ddd;
+              border-radius: 10px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+              display: none;
+            }
+          </style>
+        </head>
+        <body>
+          
+          <button id="open-popup">Politica y privacidad</button>
+        
+        
+          <div id="popup">
+            <h2>Politica de privacidad</h2>
+            <p>Garantixamos que sus datos personales etan en extremo cuidado.</p>
+            <button id="close-popup">Cerrar</button>
+          </div>
+        
+          <script>
+         
+            const openPopupButton = document.getElementById("open-popup");
+            const popup = document.getElementById("popup");
+            const closePopupButton = document.getElementById("close-popup");
+        
+            // Función para abrir la ventana emergente
+            function openPopup() {
+              popup.style.display = "block";
+            }
+        
+            // Función para cerrar la ventana emergente
+            function closePopup() {
+              popup.style.display = "none";
+            }
+        
+            // Agregar eventos a los botones
+            openPopupButton.addEventListener("click", openPopup);
+            closePopupButton.addEventListener("click", closePopup);
+          </script>
+    
+    <header class="header">
+        <h1>Salud Mental y Adicciones</h1>
+    </header>
+    <nav class="nav">
+        <a href="#salud-mental">Salud Mental</a>
+        <a href="#adicciones">Adicciones</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#Imformacion de la pagina">Imformacion de la pagina</a> 
+    </nav>
+
+    <div class="float-box">
+        <h2>paginas de ayuda</h2>
+
+        <a href="https://saludmental.unam.mx/">Salud mental de la Unam</a>
+        <p>¿Como te sientes?</p>
+        <p>Cuestionario para la deteccion de riesgos a la salud mental.</p>
+        <p>
+        </p>
+        
+        <a href="https://www.healthychildren.org/Spanish/ages-stages/teen/substance-abuse/Paginas/Drug-Abuse-Prevention-Starts-with-Parents.aspx?gad_source=1&gclid=EAIaIQobChMI88P-0K6khgMVZjutBh10wgKVEAAYBCAAEgL-y_D_BwE">La prevención contra el abuso de las drogas</a>
+        <p>¿La prevencion de las drogas y adicciones empiezan en los padres?</p>
+        </a>
+        <a href="https://www.hubiohealth.org/lp/salud-para-todos/el-cuidado-de-la-salud?gad_source=1&gclid=EAIaIQobChMIlvDEtbGkhgMVsjWtBh2TuweTEAAYASAAEgIke_D_BwE">La prevención contra el abuso de las drogas</a>
+        <p>¿Cuida tu salud?</p>
+        </a>
+      </div>
+
+
+      <div class="float-box2">
+        <img src="c:\Users\Programacion\Downloads\logo del cecitem.jpg" alt="Imagen de salud mental" width="100%">
+      </div>
+      
+    <div class="content">
+        <h2 id="salud-mental">Salud Mental</h2>
+        <img src="imagenes/salud-mental.jpg" alt="Imagen de salud mental" width="100%">
+        <p>
+            La salud mental es, en términos generales, los estados de equilibrio social y conductual de una persona con su entorno sociocultural, que garantiza su participación social, capacidad de afrontar dificultades, percepción y juicio de la realidad y de sí mismo para alcanzar el bienestar y una buena calidad de vida
+        <h3>Tipos de trastornos mentales</h3>
+        <ul>
+            <li>¿Que es teanstorno emocional</li>
+        <p>
+            El término de trastornos mentales o emocionales incluye una gran gama de condiciones que afectan sustancialmente la capacidad de las personas para manejar las demandas de la vida diaria. Esta condición puede causar dificultades de pensamientos, sentimientos, conducta funcional y relaciones personales.
+            <li>¿Que es transtorno de comportamiento</li>
+            <p>
+                El trastorno de la conducta (TC) se diagnostica cuando el niño muestra un patrón continuo de agresión hacia otras personas, y graves violaciones de las reglas y normas sociales en la casa, la escuela y con los compañeros.
+            <li>Trastorno alimenticio</li>
+            <p>
+                Los trastornos de la alimentación, también llamados trastornos de la conducta alimentaria, son enfermedades médicas graves con una influencia biológica que se caracterizan por alteraciones graves de las conductas alimentarias.
+            <li>Promocion y prevencion</li>
+            <p>
+            <li>Tratamiento y ayuda </li>
+        </ul>
+    </<div class="content">
+        <h2 id="adicciones">Adicciones</h2>
+        <img src="imagenes/adicciones.jpg" alt="Imagen de adicciones" width="100%">
+        <p>
+            Una adicción es una enfermedad crónica que se caracteriza por la búsqueda y el uso compulsivo de una sustancia o actividad, a pesar de las consecuencias negativas que pueda tener en la vida personal, laboral y social de la persona. Las adicciones pueden ser a sustancias como el alcohol, tabaco, drogas ilegales o medicamentos, o a actividades como el juego, el sexo o las compras.
+        </p>
+        <h3>Tipos de adicciones</h3>
+        <ul>
+            <div class="float-box4">
+                <h2></h2>
+                <button onclick="cambiarColor()">Cambiar Color de Fondo</button>
+                <script>
+                  function cambiarColor() {
+                    document.body.style.backgroundColor = "lightblue";
+                  }
+                </script>
+                </div>
+        
+                
+                <
+            
+
+<button onclick="mostrarAlerta()">Adiccion al alcohol</button>
+<script>
+function mostrarAlerta() {
+alert ("Buscar ayuda");
+}
+</script>
+
+<button onclick="mostrarAlerta()">Adiccion al tabaco</button>
+<script>
+function mostrarAlerta() {
+alert("Busca Yuda.");
+}
+</script>
+<button onclick="mostrarAlerta()">Adiccion a drogas ilegales</button>
+<script>
+function mostrarAlerta() {
+alert("Busca AYUDA.");
+}
+</script>
+<button onclick="mostrarAlerta()">Adiccion alos medicamentos</button>
+<script>
+function mostrarAlerta() {
+alert("Busca AYUDA.");
+}
+</script>
+<button onclick="mostrarAlerta()">Adiccion al juego</button>
+<script>
+function mostrarAlerta() {
+alert("Busca AYUDA.");
+}
+</script>  <button onclick="mostrarAlerta()">Adiccion alas compras inecesarias</button>
+<script>
+function mostrarAlerta() {
+alert("Busca AYUDA.");
+}
+</script>
+<button onclick="mostrarAlerta()">Adiccion alas redes sociales</button>
+<script>
+function mostrarAlerta() {
+alert("Busca AYUDA.");
+}
+
+</script>
+            </h5>
+
+        </ul>
+    </div>
+    <div class="content">
+        <h2 id="Imformacion de la pagina">Imformacion de la pagina
+            <li>Por que due elaborada</li>
+            <p> Esta pagina fue elbotada por Jose Moises & Co
+
+            </p>
+        </h2>
+
+    <div class="quiz">
+        <title>Formulario con validación</title>
+    </head>
+    <body>
+      <form id="miFormulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+  
+      <script>
+        function validarFormulario() {
+          var nombre = document.getElementById("Comentario").value;
+          if (comentario == "") {
+            alert("El campo Nombre no puede estar vacío");
+            return false;
+          }
+          return true;
+        }
+      </script>
+        <h2>Quiz: ¿Tienes algún problema relacionado con el tema?</h2>
+        <p>Selecciona la opción que más se ajuste a tu situación:</p>
+        <form id="quiz-form">
+            <div>
+                <input type="radio" id="Adiccion al Porno" name="Adiccion al Porno" value="Adiccion al Porno">
+                <label for="Eres adiccicto a un aparato domestico">Eres adiccicto a un aparato domestico</label>
+            </div>
+            <div>
+                <input type="radio" id="Adiccion a las tetas " name="Adiccion a las tetas" value="Adiccion a las tetas">
+                <label for="opcion2">Eres adiccito a un alimento o bebida </label>
+            </div>
+            <div>
+                <input type="radio" id="Adiccion a los culos" name="Adiccion a los culos" value="Adiccion a los culos">
+                <label for="Eres adicto a una red social">Eres adicto a una red social</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <title>Cuestionario de Autoevaluación</title>
+    <style>
+      /* Estilos para el cuestionario */
+     .question {
+        margin-bottom: 20px;
+      }
+     .question label {
+        display: block;
+        margin-bottom: 10px;
+      }
+     .question input[type="radio"] {
+        margin-right: 10px;
+      }
+      #result {
+        font-size: 24px;
+        font-weight: bold;
+        color: #00698f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cuestionario de Autoevaluación</h1>
+    <form id="quiz">
+      <div class="question">
+        <label for="q1">1. ¿Cuál es tu nivel de experiencia en programación?</label>
+        <input type="radio" id="q1-1" name="q1" value="principiante">
+        <label for="q1-1">Principiante</label>
+        <input type="radio" id="q1-2" name="q1" value="intermedio">
+        <label for="q1-2">Intermedio</label>
+        <input type="radio" id="q1-3" name="q1" value="avanzado">
+        <label for="q1-3">Avanzado</label>
+      </div>
+      <div class="question">
+        <label for="q2">2. ¿Cuántas horas a la semana dedicas a programar?</label>
+        <input type="radio" id="q2-1" name="q2" value="menos-de-5">
+        <label for="q2-1">Menos de 5 horas</label>
+        <input type="radio" id="q2-2" name="q2" value="5-10-horas">
+        <label for="q2-2">5-10 horas</label>
+        <input type="radio" id="q2-3" name="q2" value="más-de-10-horas">
+        <label for="q2-3">Más de 10 horas</label>
+      </div>
+      <div class="question">
+        <label for="q3">3. ¿Cuál es tu lenguaje de programación favor
+    <script>
+        document.getElementById("quiz-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const opcion = document.querySelector('input[name="opcion"]:checked');
+            if (opcion) {
+                const valor = opcion.value;
+                switch (valor) {
+                    case "opcion1":
+                        // Redirigir a la sección de salud mental o adicciones, según la opción seleccionada
+                        break;
+                    case "opcion2":
+                        // Redirigir a la sección de salud mental o adicciones, según la opción seleccionada
+                        break;
+                    case "opcion3":
+                        // Redirigir a la sección de salud mental o adicciones, según la opción seleccionada
+                        break;
+                }
+            } else {
+                alert("Por favor, selecciona una opción.");
+            }
+        });
+    </script>
+</body>
+</html>
